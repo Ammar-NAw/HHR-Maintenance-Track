@@ -1,0 +1,7 @@
+services:
+  dashboard:
+    build: .
+    image: hhr-maintenance-dashboard
+    ports:
+      - "8089:8080"
+    restart: unless-stopped
